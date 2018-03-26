@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<!-- Link in CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+	<body>
+
+		<!-- Start of the game -->
+		<div id = start_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Seinfeld Trivia</h1>
+
+			<button id = start_button>Start</button>
+		</div>
+
+
+		<!-- During Gameplay Container -->
+		<div id = mid_game_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Seinfeld Trivia</h1>
+
+			<!-- Game Timer -->
+			<h1 id = "timer_line">Time Remaining: <span id = "timer_number">90 Seconds</span></h1>
+
+			<!-- Game Questions -->
+
+			<h1>1. What is the name of the coffee shop the gang hangs out in?</h1>
+			<!-- Monk's -->
+				<input type="radio" name="q1" value="Central Perk">Central Perk
+				<input type="radio" name="q1" value="Starbucks">Starbucks
+				<input type="radio" name="q1" value="Monks">Monk's
+				<input type="radio" name="q1" value="Charlie's">Charlie's
+				
+
+			<h1>2. What phrase does Lloyd Braun tell George caused his breakdown?</h1>
+			<!-- Serenity Now -->
+				<input type="radio" name="q2" value="Hoochie Mama">Hoochie Mama
+				<input type="radio" name="q2" value="Serenity Now">Serenity Now
+				<input type="radio" name="q2" value="Hellooooooo">Hellooooooo
+				<input type="radio" name="q2" value="Yada Yada Yada">Yada Yada Yada
+
+
+
+			<h1>3. What baseball team did George work for?</h1>
+			<!-- Yankees -->
+				<input type="radio" name="q3" value="Yankees">Yankees
+				<input type="radio" name="q3" value="Mariners">Mariners
+				<input type="radio" name="q3" value="Mets">Mets
+				<input type="radio" name="q3" value="Dodgers">Dodgers
+
+
+			<h1>4. What is the name of the book that Jerry had overdue since the 70's?</h1>
+			<!-- Tropic of Cancer -->
+				<input type="radio" name="q4" value="1984">1984
+				<input type="radio" name="q4" value="Tropic of Capricorn">Tropic of Capricorn
+				<input type="radio" name="q4" value="A Wrinkle in Time">A Wrinkle in Time
+				<input type="radio" name="q4" value="Tropic of Cancer">Tropic of Cancer
+				
+
+			<h1>5. What is Kramer's first name?</h1>
+			<!-- Cosmo  -->
+				<input type="radio" name="q5" value="Cosmo">Cosmo
+				<input type="radio" name="q5" value="Henry">Henry 
+				<input type="radio" name="q5" value="Vincent">Vincent
+				<input type="radio" name="q5" value="Paul">Paul
+				
+			
+			<h1>6. How does Susan die?</h1>
+			<!-- Licking toxic envelopes -->
+				<input type="radio" name="q6" value="Falling down stairs">Falling down stairs
+				<input type="radio" name="q6" value="Licking toxic envelopes">Licking toxic envelopes
+				<input type="radio" name="q6" value="Drinking poison ">Drinking poison 
+				<input type="radio" name="q6" value="Heart attack">Heart attack
+				
+
+			<h1>7. Newman caught Jerry and his girlfriend making out at the movies. What movie?</h1>
+			<!-- Schindler's List -->
+				<input type="radio" name="q7" value="The Full Monty">The Full Monty
+				<input type="radio" name="q7" value="Comando">Comando
+				<input type="radio" name="q7" value="Schindlers List">Schindler's List
+				<input type="radio" name="q7" value="Prognosis Negative">Prognosis Negative
+
+			<h1>8. If someone upsets the "Soup Nazi", what does he yell ?</h1>
+			<!-- No soup for you -->
+				<input type="radio" name="q8" value="You go home">You go home! 
+				<input type="radio" name="q8" value="No soup for you">No soup for you!
+				<input type="radio" name="q8" value="Come back in one month">Come back in one month!
+				<input type="radio" name="q8" value="Get out">Get out!
+
+			<h1>9. What state do Jerry's parents live in?</h1>
+			<!-- Florida -->
+				<input type="radio" name="q9" value="Florida">Florida
+				<input type="radio" name="q9" value="California">California
+				<input type="radio" name="q9" value="Arizona">Arizona
+				<input type="radio" name="q9" value="Texas">Texas
+
+			<h1>10. What car did Jerry buy his parents?</h1>
+			<!-- Over 1,700 -->
+				<input type="radio" name="q10" value="Malibu">Malibu
+				<input type="radio" name="q10" value="Lincoln">Lincoln
+				<input type="radio" name="q10" value="Cadillac">Cadillac
+				<input type="radio" name="q10" value="Corvette">Corvette
+
+
+				<br>
+
+
+			<button id = done_button>Done!</button>
+
+		</div>
+
+
+
+
+		<!-- End of the game -->
+		<div id = end_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Seinfeld Trivia</h1>
+
+			<h1 id = "done">All Done!</h1>
+			<br>
+
+			<h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id = "unanswered">0</span></h1>
+		</div>
+			
+
+
+
+		<!-- Link in jQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+		
+	</body>
+</html>
